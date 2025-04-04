@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e1e1e;
+  min-height: 100vh;
+  color: white;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 250px;
+}
+
+.button {
+  background: #23a55a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.serverBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  width: 520px;
+  border: 2px solid #555;
+}
+
+.serverIcon {
+  border-radius: 5px;
+}
+
+.noIcon {
+  width: 70px;
+  height: 70px;
+  background: #333;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.serverName {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Minecraftia', monospace;
+}
+
+/* MOTD Box */
+.serverBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px; /* Increased width */
+    border: 2px solid #555;
+  }
+  
+  .motdBox {
+    width: 600px; /* Increased to allow full MOTD display */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow-wrap: break-word;
+    border: 1px solid #555;
+  }
+
+.motd {
+  font-size: 18px;
+  font-family: 'Minecraftia', monospace;
+  color: white;
+  text-shadow: 2px 2px black;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.playerCount {
+  font-size: 16px;
+  margin-left: auto;
+}

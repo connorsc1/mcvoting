@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=ggSans:wght@400;600&display=swap');
+
+body {
+    font-family: 'ggSans', Arial, sans-serif;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Page Container */
+.page-container {
+    width: 750px;
+    text-align: center;
+}
+
+/* Banner Section */
+.banner-section {
+    background: white;
+    height: 100px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Server Info Section */
+.server-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #2a2d31;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.server-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.server-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.server-rating {
+    font-size: 18px;
+    color: gold;
+    font-weight: bold;
+}
+
+.server-stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.players-online {
+    font-size: 14px;
+    color: #23a55a;
+}
+
+.copy-ip-btn {
+    background: #23a55a;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.copy-ip-btn:hover {
+    background: #1d8a4e;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Info Card */
+.info-card {
+    background: #313338;
+    color: white;
+    border-radius: 12px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.info-card-banner {
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+}
+
+.server-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    border: 4px solid #232327;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.info-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 15px 0px 15px;
+}
+
+/* Align info-text content to the left */
+.info-text {
+    flex-grow: 0.5;
+    text-align: left;  /* Align text to the left */
+}
+
+/* Adjustments for the header "MCVoting" */
+.info-card h1 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+    color: #ffffff;
+    display: inline-block;
+    text-align: left;  /* Make sure the header is left aligned */
+}
+
+/* Ensure members-info is aligned left */
+.members-info {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left;  /* Align the members info text to the left */
+}
+
+.gray-text {
+    color: #b5bac1;  /* Light gray color */
+    font-size: 14px;  /* Adjust size if necessary */
+}
+
+/* Green Dot for Online Status */
+.green-dot {
+    color: #23a55a;  /* Green color for the dot */
+    font-size: 16px;
+    font-weight: bold; /* Ensure the dot appears bold */
+}
+
+/* Align the established date text left */
+.established-date {
+    font-size: 12px;
+    color: #b5bac1;
+    margin-top: 2px;
+    text-align: left;  /* Align the established date to the left */
+}
+
+/* Align server description to the left */
+.server-description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #b5bac1;
+    text-align: left;  /* Align description text to the left */
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    margin-top: 5px;
+    width: 100%;
+    background: #313338;
+    border-radius: 0 0 12px 12px;
+}
+
+.minecraft-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.minecraft-label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Voting Section */
+.voting-section {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    width: 430px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.vote-btn {
+    background: linear-gradient(45deg, #23a55a, #00632b);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.vote-btn:hover {
+    transform: scale(1.05);
+}
+
+.vote-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.vote-toggle input {
+    display: none;
+}
+
+.slider {
+    width: 40px;
+    height: 20px;
+    background: #666;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.vote-toggle input:checked + .slider::before {
+    transform: translateX(20px);
+    background: #23a55a;
+}
+
+.vote-toggle input:checked + .slider {
+    background: #00632b;
+}
+
+.toggle-label {
+    color: white;
+    font-size: 16px;
+}
+
+.star-rating {
+    font-size: 30px;
+    color: gold;
+    margin: 10px 0;
+    letter-spacing: 5px;
+}
+
+.review-text {
+    width: 93%;
+    height: 35%;
+    background: #333;
+    border: 2px solid #444;
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.submit-rating-btn {
+    background: linear-gradient(45deg, #23a55a, #00632b);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.submit-rating-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Join Server Button */
+.join-server-btn {
+    background: linear-gradient(45deg, #23a55a, #00632b);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.join-server-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Adjust CommServ Icon size */
+.commserv-icon {
+    width: 18px;  /* Reduce size of the icon */
+    height: 18px; /* Maintain aspect ratio */
+    margin-left: 5px;  /* Adjust margin if necessary */
+    vertical-align: middle;
+}
